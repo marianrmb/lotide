@@ -1,22 +1,23 @@
 const assertEqual = function(actual, expected) {
-  if (actual === expected){
-      console.log(`These two are the same: ${actual} vs ${expected}`)
+  if (actual === expected) {
+    console.log(`✅ ✅ ✅  Assertion Passed: ${actual} === ${expected}`);
   } else {
-      console.log(`These two are not the same: ${actual} vs ${expected}`);
+    console.log(`🛑 🛑 🛑  Assertion Failed: ${actual} !== ${expected}`);
   }
 
 };
 
+
 const countLetters = function(sentence){
-  const countNum = [];
+  const countNumber = [];
   for (const letter of sentence) {
-      if (countNum[letter]) {
-          countNum[letter] += 1;
+      if (countNumber[letter]) {
+        countNumber[letter] += 1;
       } else {
-          countNum[letter] = 1
+        countNumber[letter] = 1
       }
   }
-  return countNum;
+  return countNumber;
 }
 
 console.log(countLetters("I am really hungry"))
